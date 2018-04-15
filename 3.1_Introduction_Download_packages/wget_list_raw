@@ -1,0 +1,482 @@
+Téléchargement :
+http://download.savannah.gnu.org/releases/acl/acl-2.2.52.src.tar.gz
+Somme de contrôle MD5 :
+a61415312426e9c2212bd7dc7929abda
+• Attr (2.4.47) - 336 Ko :
+Page d'accueil :
+http://savannah.nongnu.org/projects/attr
+Téléchargement :
+http://download.savannah.gnu.org/releases/attr/attr-2.4.47.src.tar.gz
+Somme de contrôle MD5 :
+84f58dec00b60f2dc8fd1c9709291cc7
+20
+Linux From Scratch - Version 8.2
+• Autoconf (2.69) - 1,186 Ko:
+Page d'accueil :
+http://www.gnu.org/software/autoconf/
+Téléchargement :
+http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
+Somme de contrôle MD5 :
+50f97f4159805e374639a73e2636f22e
+• Automake (1.15.1) - 1,475 Ko:
+Page d'accueil :
+http://www.gnu.org/software/automake/
+Téléchargement :
+http://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.xz
+Somme de contrôle MD5 :
+24cd3501b6ad8cd4d7e2546f07e8b4d4
+• Bash (4.4.18) - 9,242 Ko:
+Page d'accueil :
+http://www.gnu.org/software/bash/
+Téléchargement :
+http://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
+Somme de contrôle MD5 :
+518e2c187cc11a17040f0915dddce54e
+• Bc (1.07.1) - 411 Ko:
+Page d'accueil :
+http://www.gnu.org/software/bc/
+Téléchargement :
+http://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
+Somme de contrôle MD5 :
+cda93857418655ea43590736fc3ca9fc
+• Binutils (2.30) - 19,811 Ko:
+Page d'accueil :
+http://www.gnu.org/software/binutils/
+Téléchargement :
+http://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.xz
+Somme de contrôle MD5 :
+ffc476dd46c96f932875d1b2e27e929f
+• Bison (3.0.4) - 1,928 Ko:
+Page d'accueil :
+http://www.gnu.org/software/bison/
+Téléchargement :
+http://ftp.gnu.org/gnu/bison/bison-3.0.4.tar.xz
+Somme de contrôle MD5 :
+c342201de104cc9ce0a21e0ad10d4021
+• Bzip2 (1.0.6) - 764 Ko:
+Page d'accueil :
+http://www.bzip.org/
+Téléchargement :
+http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
+Somme de contrôle MD5 :
+00b516f4704d4a7cb50a1d97e6e8e15b
+• Check (0.12.0) - 747 Ko :
+Page d'accueil :
+https://libcheck.github.io/check
+Téléchargement :
+https://github.com/libcheck/check/releases/download/0.12.0/check-0.12.0.tar.gz
+Somme de contrôle MD5 :
+31b17c6075820a434119592941186f70
+• Coreutils (8.29) - 5,163 Ko:
+Page d'accueil :
+http://www.gnu.org/software/coreutils/
+Téléchargement :
+http://ftp.gnu.org/gnu/coreutils/coreutils-8.29.tar.xz
+Somme de contrôle MD5 :
+960cfe75a42c9907c71439f8eb436303
+• DejaGNU (1.6.1) - 514 Ko:
+Page d'accueil :
+http://www.gnu.org/software/dejagnu/
+Téléchargement :
+http://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.1.tar.gz
+Somme de contrôle MD5 :
+2ac8405a4c7ca8611d004fe852966c6f
+• Diffutils (3.6) - 1,366 Ko:
+Page d'accueil :
+http://www.gnu.org/software/diffutils/
+Téléchargement :
+http://ftp.gnu.org/gnu/diffutils/diffutils-3.6.tar.xz
+Somme de contrôle MD5 :
+07cf286672ced26fba54cd0313bdc071
+21
+Linux From Scratch - Version 8.2
+• GDBM (1.14.1) - 874 Ko :
+Page d'accueil :
+http://www.gnu.org/software/gdbm/
+Téléchargement :
+http://ftp.gnu.org/gnu/gdbm/gdbm-1.14.1.tar.gz
+Somme de contrôle MD5 :
+c2ddcb3897efa0f57484af2bd4f4f848
+• Gettext (0.19.8.1) - 7,041 Ko:
+Page d'accueil :
+http://www.gnu.org/software/gettext/
+Téléchargement :
+http://ftp.gnu.org/gnu/gettext/gettext-0.19.8.1.tar.xz
+Somme de contrôle MD5 :
+df3f5690eaa30fd228537b00cb7b7590
+• Glibc (2.27) - 15,035 Ko :
+Page d'accueil :
+http://www.gnu.org/software/libc/
+Téléchargement :
+http://ftp.gnu.org/gnu/glibc/glibc-2.27.tar.xz
+Somme de contrôle MD5 :
+898cd5656519ffbc3a03fe811dd89e82
+Note
+Cette version de glibc corrige un problème de sécurité qui ne l'est pas encore dans la dernière version
+stable.
+• GMP (6.1.2) - 1,901 Ko:
+Page d'accueil :
+http://www.gnu.org/software/gmp/
+Téléchargement :
+http://ftp.gnu.org/gnu/gmp/gmp-6.1.2.tar.xz
+Somme de contrôle MD5 :
+f58fa8001d60c4c77595fbbb62b63c1d
+• Gperf (3.1) - 1,188 Ko :
+Page d'accueil :
+http://www.gnu.org/software/gperf/
+Téléchargement :
+http://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz
+Somme de contrôle MD5 :
+9e251c0a618ad0824b51117d5d9db87e
+• Grep (3.1) - 1,339 Ko:
+Page d'accueil :
+http://www.gnu.org/software/grep/
+Téléchargement :
+http://ftp.gnu.org/gnu/grep/grep-3.1.tar.xz
+Somme de contrôle MD5 :
+feca7b3e7c7f4aab2b42ecbfc513b070
+• Groff (1.22.3) - 4,091 Ko:
+Page d'accueil :
+http://www.gnu.org/software/groff/
+Téléchargement :
+http://ftp.gnu.org/gnu/groff/groff-1.22.3.tar.gz
+Somme de contrôle MD5 :
+cc825fa64bc7306a885f2fb2268d3ec5
+• GRUB (2.02) - 5,970 Ko:
+Page d'accueil :
+http://www.gnu.org/software/grub/
+Téléchargement :
+http://ftp.gnu.org/gnu/grub/grub-2.02.tar.xz
+Somme de contrôle MD5 :
+8a4a2a95aac551fb0fba860ceabfa1d3
+• Gzip (1.9) - 748 Ko:
+Page d'accueil :
+http://www.gnu.org/software/gzip/
+Téléchargement :
+http://ftp.gnu.org/gnu/gzip/gzip-1.9.tar.xz
+Somme de contrôle MD5 :
+9492c6ccb2239ff679a5475a7bb543ed
+• Iana-Etc (2.30) - 201 Ko:
+Page d'accueil :
+http://freecode.com/projects/iana-etc
+Téléchargement :
+http://anduin.linuxfromscratch.org/LFS/iana-etc-2.30.tar.bz2
+Somme de contrôle MD5 :
+3ba3afb1d1b261383d247f46cb135ee8
+23
+Linux From Scratch - Version 8.2
+• Inetutils (1.9.4) - 1,333 Ko:
+Page d'accueil :
+http://www.gnu.org/software/inetutils/
+Téléchargement :
+http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.4.tar.xz
+Somme de contrôle MD5 :
+87fef1fa3f603aef11c41dcc097af75e
+• Intltool (0.51.0) - 159 Ko :
+Page d'accueil :
+http://freedesktop.org/wiki/Software/intltool
+Téléchargement :
+http://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
+Somme de contrôle MD5 :
+12e517cac2b57a0121cda351570f1e63
+• IPRoute2 (4.15.0) - 634 Ko:
+Page d'accueil :
+https://www.kernel.org/pub/linux/utils/net/iproute2/
+Téléchargement :
+https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-4.15.0.tar.xz
+Somme de contrôle MD5 :
+0681bf4664b2649ad4e12551a3a7a1f9
+• Kbd (2.0.4) - 1,008 Ko:
+Page d'accueil :
+http://ftp.altlinux.org/pub/people/legion/kbd
+Téléchargement :
+https://www.kernel.org/pub/linux/utils/kbd/kbd-2.0.4.tar.xz
+Somme de contrôle MD5 :
+c1635a5a83b63aca7f97a3eab39ebaa6
+• Kmod (25) - 540 Ko:
+Téléchargement :
+https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-25.tar.xz
+Somme de contrôle MD5 :
+34f325cab568f842fdde4f8b2182f220
+• Less (530) - 332 Ko:
+Page d'accueil :
+http://www.greenwoodsoftware.com/less/
+Téléchargement :
+http://www.greenwoodsoftware.com/less/less-530.tar.gz
+Somme de contrôle MD5 :
+6a39bccf420c946b0fd7ffc64961315b
+• LFS-Bootscripts (20170626) - 32 Ko:
+Téléchargement :
+http://www.linuxfromscratch.org/lfs/downloads/8.2/lfs-bootscripts-20170626.tar.bz2
+Somme de contrôle MD5 :
+8a9f3d5aab3f77a70fef0773e8bc7b2b
+• Libcap (2.25) - 64 Ko :
+Page d'accueil :
+https://sites.google.com/site/fullycapable/
+Téléchargement :
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.25.tar.xz
+Somme de contrôle MD5 :
+6666b839e5d46c2ad33fc8aa2ceb5f77
+• Libffi (3.2.1) - 920 Ko:
+Page d'accueil :
+https://sourceware.org/libffi/
+Téléchargement :
+ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
+Somme de contrôle MD5 :
+83b89587607e3eb65c70d361f13bab43
+• Libpipeline (1.5.0) - 810 Ko :
+Page d'accueil :
+http://libpipeline.nongnu.org/
+Téléchargement :
+http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.0.tar.gz
+Somme de contrôle MD5 :
+b7437a5020190cfa84f09c412db38902
+• Libtool (2.4.6) - 951 Ko:
+Page d'accueil :
+http://www.gnu.org/software/libtool/
+Téléchargement :
+http://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
+Somme de contrôle MD5 :
+1bfb9b923f2c1339b4d2ce1807064aa5
+24
+Linux From Scratch - Version 8.2
+• Linux (4.15.3) - 99,794 Ko:
+Page d'accueil :
+http://www.kernel.org/
+Téléchargement :
+https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.15.3.tar.xz
+Somme de contrôle MD5 :
+c74d30ec13491aeb24c237d703eace3e
+Note
+Le noyau Linux est régulièrement mis à jour, souvent suite à la découverte de nouvelles failles de
+sécurité. Vous devriez utiliser la version 4.15.x la plus récente disponible du noyau, sauf si la page
+d'errata indique autre chose.
+Pour les utilisateurs ayant un débit limité ou une bande passante chère, si vous souhaitez mettre à jour
+le noyau Linux, une version en ligne de commande du paquet et des correctifs peuvent être téléchargées
+séparément. Ceci peut économiser du temps ou de l'argent pour une mise à jour d'un niveau de correctif
+mineure (subsequent) à l'intérieur d'une version mineure.
+• M4 (1.4.18) - 1,180 Ko:
+Page d'accueil :
+http://www.gnu.org/software/m4/
+Téléchargement :
+http://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
+Somme de contrôle MD5 :
+730bb15d96fffe47e148d1e09235af82
+• Make (4.2.1) - 1,375 Ko:
+Page d'accueil :
+http://www.gnu.org/software/make/
+Téléchargement :
+http://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+Somme de contrôle MD5 :
+15b012617e7c44c0ed482721629577ac
+• Man-DB (2.8.1) - 1,584 Ko:
+Page d'accueil :
+http://www.nongnu.org/man-db/
+Téléchargement :
+http://download.savannah.gnu.org/releases/man-db/man-db-2.8.1.tar.xz
+Somme de contrôle MD5 :
+51842978e06686286421f9498d1009b7
+• Man-pages (4.15) - 1,585 Ko:
+Page d'accueil :
+http://www.kernel.org/doc/man-pages/
+Téléchargement :
+https://www.kernel.org/pub/linux/docs/man-pages/man-pages-4.15.tar.xz
+Somme de contrôle MD5 :
+4298feb3d5feffad8ff46bb87b061a07
+• Meson (0.44.0) - 1,077 Ko:
+Page d'accueil :
+http://mesonbuild.com
+Téléchargement :
+https://github.com/mesonbuild/meson/releases/download/0.44.0/meson-0.44.0.tar.gz
+Somme de contrôle MD5 :
+26a7ca93ec9cea5facb365664261f9c6
+• MPC (1.1.0) - 685 Ko:
+Page d'accueil :
+http://www.multiprecision.org/
+Téléchargement :
+https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+Somme de contrôle MD5 :
+4125404e41e482ec68282a2e687f6c73
+• MPFR (4.0.1) - 1,380 Ko :
+Page d'accueil :
+http://www.mpfr.org/
+Téléchargement :
+http://www.mpfr.org/mpfr-4.0.1/mpfr-4.0.1.tar.xz
+Somme de contrôle MD5 :
+b8dd19bd9bb1ec8831a6a582a7308073
+• Ninja (1.8.2) - 181 Ko:
+Page d'accueil :
+https://ninja-build.org/
+Téléchargement :
+https://github.com/ninja-build/ninja/archive/v1.8.2/ninja-1.8.2.tar.gz
+Somme de contrôle MD5 :
+5fdb04461cc7f5d02536b3bfc0300166
+25
+Linux From Scratch - Version 8.2
+• Ncurses (6.1) - 3,288 Ko:
+Page d'accueil :
+http://www.gnu.org/software/ncurses/
+Téléchargement :
+http://ftp.gnu.org/gnu//ncurses/ncurses-6.1.tar.gz
+Somme de contrôle MD5 :
+98c889aaf8d23910d2b92d65be2e737a
+• OpenSSL (1.1.0g) - 5.1 Mo:
+Page d'accueil :
+https://www.openssl.org/
+Téléchargement :
+https://openssl.org/source/openssl-1.1.0g.tar.gz
+Somme de contrôle MD5 :
+ba5f1b8b835b88cadbce9b35ed9531a6
+• Patch (2.7.6) - 766 Ko:
+Page d'accueil :
+http://savannah.gnu.org/projects/patch/
+Téléchargement :
+http://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
+Somme de contrôle MD5 :
+78ad9937e4caadcba1526ef1853730d5
+• Perl (5.26.1) - 11,644 Ko:
+Page d'accueil :
+http://www.perl.org/
+Téléchargement :
+http://www.cpan.org/src/5.0/perl-5.26.1.tar.xz
+Somme de contrôle MD5 :
+70e988b4318739b0cf3ad5e120bfde88
+• Pkg-config (0.29.2) - 1,970 Ko :
+Page d'accueil :
+http://www.freedesktop.org/wiki/Software/pkg-config
+Téléchargement :
+https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+Somme de contrôle MD5 :
+f6e931e319531b736fadc017f470e68a
+• Procps (3.3.12) - 826 Ko:
+Page d'accueil :
+http://sourceforge.net/projects/procps-ng
+Téléchargement :
+http://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.12.tar.xz
+Somme de contrôle MD5 :
+957e42e8b193490b2111252e4a2b443c
+• Psmisc (23.1) - 290 Ko:
+Page d'accueil :
+http://psmisc.sourceforge.net/
+Téléchargement :
+https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.1.tar.xz
+Somme de contrôle MD5 :
+bbba1f701c02fb50d59540d1ff90d8d1
+• Python (3.6.4) - 16,600 Ko:
+Page d'accueil :
+https://www.python.org/
+Téléchargement :
+https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+Somme de contrôle MD5 :
+1325134dd525b4a2c3272a1a0214dd54
+• Documentation Python (3.6.4) - 5,824 Ko:
+Téléchargement :
+https://docs.python.org/ftp/python/doc/3.6.4/python-3.6.4-docs-html.tar.bz2
+Somme de contrôle MD5 :
+205aba4b06fd5e44598d1638a2ff81d8
+• Readline (7.0) - 2,842 Ko:
+Page d'accueil :
+http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+Téléchargement :
+http://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
+Somme de contrôle MD5 :
+205b03a87fc83dab653b628c59b9fc91
+• Sed (4.4) - 1,154 Ko:
+Page d'accueil :
+http://www.gnu.org/software/sed/
+Téléchargement :
+http://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz
+Somme de contrôle MD5 :
+e0c583d4c380059abd818cd540fe6938
+26
+Linux From Scratch - Version 8.2
+• Shadow (4.5) - 1,589 Ko:
+Téléchargement :
+https://github.com/shadow-maint/shadow/releases/download/4.5/shadow-4.5.tar.xz
+Somme de contrôle MD5 :
+c350da50c2120de6bb29177699d89fe3
+• Sysklogd (1.5.1) - 88 Ko:
+Page d'accueil :
+http://www.infodrom.org/projects/sysklogd/
+Téléchargement :
+http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
+Somme de contrôle MD5 :
+c70599ab0d037fde724f7210c2c8d7f8
+• Sysvinit (2.88dsf) - 108 Ko:
+Page d'accueil :
+http://savannah.nongnu.org/projects/sysvinit
+Téléchargement :
+http://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.88dsf.tar.bz2
+Somme de contrôle MD5 :
+6eda8a97b86e0a6f59dabbf25202aa6f
+• Tar (1.30) - 2,059 Ko:
+Page d'accueil :
+http://www.gnu.org/software/tar/
+Téléchargement :
+http://ftp.gnu.org/gnu/tar/tar-1.30.tar.xz
+Somme de contrôle MD5 :
+2d01c6cd1387be98f57a0ec4e6e35826
+• Tcl (8.6.8) - 9,665 Ko:
+Page d'accueil :
+http://tcl.sourceforge.net/
+Téléchargement :
+https://downloads.sourceforge.net/tcl/tcl8.6.8-src.tar.gz
+Somme de contrôle MD5 :
+81656d3367af032e0ae6157eff134f89
+• Texinfo (6.5) - 4,399 Ko:
+Page d'accueil :
+http://www.gnu.org/software/texinfo/
+Téléchargement :
+http://ftp.gnu.org/gnu/texinfo/texinfo-6.5.tar.xz
+Somme de contrôle MD5 :
+3715197e62e0e07f85860b3d7aab55ed
+• Time Zone Data (2018c) - 334 Ko :
+Page d'accueil :
+http://www.iana.org/time-zones
+Téléchargement :
+http://www.iana.org/time-zones/repository/releases/tzdata2018c.tar.gz
+Somme de contrôle MD5 :
+c412b1531adef1be7a645ab734f86acc
+• Udev-lfs Archive Tar (udev-lfs-20171102) - 11 Ko :
+Téléchargement :
+http://anduin.linuxfromscratch.org/LFS/udev-lfs-20171102.tar.bz2
+Somme de contrôle MD5 :
+d92afb0c6e8e616792068ee4737b0d24
+• Util-linux (2.31.1) - 4,412 Ko:
+Page d'accueil :
+http://freecode.com/projects/util-linux
+Téléchargement :
+https://www.kernel.org/pub/linux/utils/util-linux/v2.31/util-linux-2.31.1.tar.xz
+Somme de contrôle MD5 :
+7733b583dcb51518944d42aa62ef19ea
+• Vim (8.0.586) - 10,613 Ko:
+Page d'accueil :
+http://www.vim.org
+Téléchargement :
+ftp://ftp.vim.org/pub/vim/unix/vim-8.0.586.tar.bz2
+Somme de contrôle MD5 :
+b35e794140c196ff59b492b56c1e73db
+• XML::Parser (2.44) - 232 Ko :
+Page d'accueil :
+https://github.com/chorny/XML-Parser
+Téléchargement :
+http://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.44.tar.gz
+Somme de contrôle MD5 :
+af4813fe3952362451201ced6fbce379
+• Xz Utils (5.2.3) - 1009 Ko:
+Page d'accueil :
+http://tukaani.org/xz
+Téléchargement :
+http://tukaani.org/xz/xz-5.2.3.tar.xz
+Somme de contrôle MD5 :
+60fb79cab777e3f71ca43d298adacbd5
+27
+Linux From Scratch - Version 8.2
+• Zlib (1.2.11) - 457 Ko:
+Page d'accueil :
+http://www.zlib.net/
+Téléchargement :
+http://zlib.net/zlib-1.2.11.tar.xz
+Somme de contrôle MD5 :
+85adef240c5f370b308da8c938951a68
+Taille totale de ces paquets : e
