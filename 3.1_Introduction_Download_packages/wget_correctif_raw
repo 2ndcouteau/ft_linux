@@ -1,0 +1,32 @@
+• Bzip2 Correctif documentation - 1.6 Ko :
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/bzip2-1.0.6-install_docs-1.patch
+Somme de contrôle MD5 :
+6a5ac7e89b791aae556de0f745916f7f
+• Coreutils Correctif pour l'internationalisation - 168 Ko:
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/coreutils-8.29-i18n-1.patch
+Somme de contrôle MD5 :
+a9404fb575dfd5514f3c8f4120f9ca7d
+• Glibc correctif FHS - 2.8 Ko :
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/glibc-2.27-fhs-1.patch
+Somme de contrôle MD5 :
+9a5997c3452909b1769918c759eff8a2
+• Correctif réparant Kdb Backspace/Delete - 12 Ko :
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/kbd-2.0.4-backspace-1.patch
+Somme de contrôle MD5 :
+f75cca16a38da6caa7d52151f7136895
+• Correctif de limitation des tâches de Ninja - 2.5 Ko :
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/ninja-1.8.2-add_NINJAJOBS_var-1.patch
+Somme de contrôle MD5 :
+f537a633532492e805aa342fa869ca45
+• Sysvinit Correctif consolidé - 3.9 Ko:
+Téléchargement :
+http://www.linuxfromscratch.org/patches/lfs/8.2/sysvinit-2.88dsf-consolidated-1.patch
+Somme de contrôle MD5 :
+0b7b5ea568a878fdcc4057b2bf36e5cb
+Taille totale de ces correctifs : environ 190.8 Ko
+En plus des correctifs requis ci-dessus, il existe un certain nombre de corr
