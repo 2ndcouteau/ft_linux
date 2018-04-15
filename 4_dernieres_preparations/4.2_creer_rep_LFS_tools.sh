@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 ## NOTE
 # You have to be root !

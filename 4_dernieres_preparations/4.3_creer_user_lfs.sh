@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 ## NOTE
 # You have to be root !
@@ -14,7 +14,7 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 # -g lfs
 #Cette option ajoute l'utilisateur lfs au groupe lfs.
 # -m
-#Ceci crée un répertoire personnel pour l'utilisateur lfs . 
+#Ceci crée un répertoire personnel pour l'utilisateur lfs .
 # -k /dev/null
 #Ce paramètre empêche toute copie possible de fichiers provenant du répertoire squelette (par défaut, /etc/skel) en modifiant son emplacement par le périphérique spécial null.
 # lfs

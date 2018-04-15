@@ -1,5 +1,7 @@
+#!/bin/bash
+
 ## NOTE
-### Volume for swap and boot exist yet 
+### Volume for swap and boot exist yet
 
 
 # Create repo for /
