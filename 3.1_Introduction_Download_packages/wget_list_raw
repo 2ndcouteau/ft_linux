@@ -90,6 +90,83 @@ Somme de contrôle MD5 :
 07cf286672ced26fba54cd0313bdc071
 21
 Linux From Scratch - Version 8.2
+
+Eudev (3.2.5) - 1,814:
+Téléchargement :
+http://dev.gentoo.org/~blueness/eudev/eudev-3.2.5.tar.gz
+Somme de contrôle MD5 :
+6ca08c0e14380f87df8e8aceac123671
+• E2fsprogs (1.43.9) - 7,311 Ko:
+Page d'accueil :
+http://e2fsprogs.sourceforge.net/
+Téléchargement :
+http://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.43.9/e2fsprogs-1.43.9.tar.gz
+Somme de contrôle MD5 :
+8749ba4fbc25d1b13753b79f1f84b69d
+• Elfutils (0.170) - 8,168 Ko:
+Page d'accueil :
+https://sourceware.org/ftp/elfutils/
+Téléchargement :
+https://sourceware.org/ftp/elfutils/0.170/elfutils-0.170.tar.bz2
+Somme de contrôle MD5 :
+03599aee98c9b726c7a732a2dd0245d5
+• Expat (2.2.5) - 500 Ko :
+Page d'accueil :
+http://expat.sourceforge.net/
+Téléchargement :
+http://prdownloads.sourceforge.net/expat/expat-2.2.5.tar.bz2
+Somme de contrôle MD5 :
+789e297f547980fc9ecc036f9a070d49
+• Expect (5.45.4) - 618 Ko:
+Page d'accueil :
+http://expect.sourceforge.net/
+Téléchargement :
+http://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz
+Somme de contrôle MD5 :
+00fce8de158422f5ccd2666512329bd2
+• File (5.32) - 779 Ko:
+Page d'accueil :
+http://www.darwinsys.com/file/
+Téléchargement :
+ftp://ftp.astron.com/pub/file/file-5.32.tar.gz
+Somme de contrôle MD5 :
+4f2503752ff041895090ed6435610435
+Note
+Il se peut que le fichier (5.32) ne soit plus disponible à l'emplacement indiqué. Les administrateurs du
+site de l'emplacement principal de téléchargement suppriment régulièrement les anciennes versions
+lorsque de nouvelles sortent. Vous pouvez trouver un autre emplacement pour le téléchargement qui
+peut conserver la bonne version disponible sur
+http://www.linuxfromscratch.org/lfs/download.html#ftp
+.
+• Findutils (4.6.0) - 3,692 Ko:
+Page d'accueil :
+http://www.gnu.org/software/findutils/
+Téléchargement :
+http://ftp.gnu.org/gnu/findutils/findutils-4.6.0.tar.gz
+Somme de contrôle MD5 :
+9936aa8009438ce185bea2694a997fc1
+• Flex (2.6.4) - 1,386 Ko:
+Page d'accueil :
+http://flex.sourceforge.net
+Téléchargement :
+https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
+Somme de contrôle MD5 :
+2882e3179748cc9f9c23ec593d6adc8d
+• Gawk (4.2.0) - 2,880 Ko:
+Page d'accueil :
+http://www.gnu.org/software/gawk/
+Téléchargement :
+http://ftp.gnu.org/gnu/gawk/gawk-4.2.0.tar.xz
+Somme de contrôle MD5 :
+f26c469addc67d88034b01b62ebab284
+• GCC (7.3.0) - 60,999 Ko:
+Page d'accueil :
+http://gcc.gnu.org/
+Téléchargement :
+http://ftp.gnu.org/gnu/gcc/gcc-7.3.0/gcc-7.3.0.tar.xz
+Somme de contrôle MD5 :
+be2da21680f27624f3a87055c4ba5af2
+
 • GDBM (1.14.1) - 874 Ko :
 Page d'accueil :
 http://www.gnu.org/software/gdbm/
