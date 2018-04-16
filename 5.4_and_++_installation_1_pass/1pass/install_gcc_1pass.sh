@@ -6,6 +6,11 @@ echo -e $blu"Extract gcc"$Rcol
 tar -xvf gcc*.tar.xz
 cd gcc*/
 
+echo -e $blu"Make Clean"$Rcol
+make clean
+
+sleep 5
+
 echo -e $blu"Extract dependancies in the$red GCC$blu folder"$Rcol
 tar -xf ../mpfr-4.0.1.tar.xz
 mv -v mpfr-4.0.1 mpfr
@@ -42,8 +47,8 @@ mkdir -v build
 cd build
 
 
-echo -e $blu"Set$yel LFS_TGT=$(../config.guess)"$Rcol
-LFS_TGT=$(../.config.guess)
+#echo -e $blu"Set$yel LFS_TGT=$(../config.guess)"$Rcol
+#LFS_TGT=$(../.config.guess)
 
 time {
     echo -e $blu"Run$red configuration"$Rcol
@@ -70,6 +75,10 @@ time {
 	--disable-libstdcxx                            \
         --enable-languages=c,c++
 
+    echo -e $red"make clean"$Rcol
+    make clean
+
+    
     echo -e $red"make"$Rcol
     make
 

@@ -28,6 +28,6 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 # Change the propriotary of the repository
 # Connection as lfs user
 passwd lfs
-chown -v lfs $LFS/tools
-chown -v lfs $LFS/sources
+chown -v -R lfs:lfs $LFS/tools
+chown -v -R lfs:lfs $LFS/sources
 su - lfs

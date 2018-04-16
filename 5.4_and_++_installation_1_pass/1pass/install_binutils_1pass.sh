@@ -10,8 +10,8 @@ echo -e $blu"Create$yel build$blu folder"$Rcol
 mkdir -v build
 cd build
 
-echo -e $blu"Set$yel LFS_TGT=$(../config.guess)"$Rcol
-LFS_TGT=$(../config.guess)
+#echo -e $blu"Set$yel LFS_TGT=$(../config.guess)"$Rcol
+#LFS_TGT=$(../config.guess)
 
 time {
     echo -e $blu"Run$red configuration"$Rcol

@@ -14,7 +14,7 @@ blu='\e[0;34m';
 # The USER lfs should be in a sudoers
 # !!!!!
 
-
+time {
 echo -e $red"#####################################"
 echo -e "# Start Install all packages$BRed 1 pass$red #"
 echo -e "#####################################"$Rcol
@@ -27,7 +27,9 @@ SOURCES=$LFS/sources
 echo -e $blu"Set$yel TOOLS=/mnt/lfs/tools"
 TOOLS=$LFS/tools
 echo -e $blu"Set$yel PWD=$(pwd)"
-PWD=$(pwd)
+
+ROOT_PWD=$(pwd)/
+
 echo -e $blu"Set$yel SUB=./1pass"
 SUB=./1pass
 
@@ -36,12 +38,20 @@ mkdir -vp $LFS/tools
 sudo chown -vR lfs:lfs $SOURCES
 sudo chown -vR lfs:lfs $TOOLS
 
-
 echo -e $red"## Call install$BRed binutils 1pass ##"$Rcol
-cd $PWD
+echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
+cd $ROOT_PWD
+echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
 . $SUB/install_binutils_1pass.sh
 
 
 echo -e $red"## Call install$BRed gcc 1pass ##"$Rcol
-cd $PWD
+
+echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
+cd $ROOT_PWD
+echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
 . $SUB/install_gcc_1pass.sh
+
+
+} # End time
+
