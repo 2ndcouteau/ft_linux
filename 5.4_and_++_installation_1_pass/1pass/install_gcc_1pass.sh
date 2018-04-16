@@ -2,11 +2,11 @@
 
 cd $SOURCES
 
+echo -e $blu"Extract gcc"$Rcol
 tar -xvf gcc*.tar.xz
 cd gcc*/
 
-
-# Extract dependancies in the GCC folder
+echo -e $blu"Extract dependancies in the$red GCC$blu folder"$Rcol
 tar -xf ../mpfr-4.0.1.tar.xz
 mv -v mpfr-4.0.1 mpfr
 
@@ -37,13 +37,16 @@ case $(uname -m) in
 	;;
 esac
 
-
+echo -e $blu"Create$yel build$blu folder"$Rcol
 mkdir -v build
 cd build
 
-LFS_TGT=$(../.config/guess)
+
+echo -e $blu"Set$yel LFS_TGT=$(../config.guess)"$Rcol
+LFS_TGT=$(../.config.guess)
 
 time {
+    echo -e $blu"Run$red configuration"$Rcol
     ../configure                                       \
 	--target=$LFS_TGT                              \
 	--prefix=/tools                                \
@@ -67,7 +70,9 @@ time {
 	--disable-libstdcxx                            \
         --enable-languages=c,c++
 
+    echo -e $red"make"$Rcol
     make
 
+    echo -e $red"make install"$Rcol
     make install
 }
