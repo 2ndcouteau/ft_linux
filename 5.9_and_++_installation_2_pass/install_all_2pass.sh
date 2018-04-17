@@ -40,25 +40,16 @@ time {
 
     echo -e $red"## Call install$BRed binutils 1pass ##"$Rcol
     cd $ROOT_PWD
-    . $SUB/install_binutils_1pass.sh
+    . $SUB/install_binutils_2pass.sh
 
 
     echo -e $red"## Call install$BRed gcc 1pass ##"$Rcol
     cd $ROOT_PWD
-    . $SUB/install_gcc_1pass.sh
+    . $SUB/install_gcc_2pass.sh
 
-
-    echo -e $red"## Call install$BRed Linux API Header 1pass ##"$Rcol
-    cd $ROOT_PWD
-    . $SUB/install_linux_API_header.sh
-
-    echo -e $red"## Call install$BRed Glibc ##"$Rcol
-    cd $ROOT_PWD
-    . $SUB/install_glibc.sh
 
     echo -e $red"## CHECK INSTALL 1 PASS ##"$Rcol
     cd $ROOT_PWD
-    . $SUB/check_install_1pass.sh
+    . $SUB/check_install_2pass.sh
 
 } # End time
-
