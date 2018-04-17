@@ -33,24 +33,32 @@ ROOT_PWD=$(pwd)/
 echo -e $blu"Set$yel SUB=./1pass"
 SUB=./1pass
 
-echo -e $blu"Create $yel$LFS/tools$blu and change owner of $yel$SOURCES$blu and $yel$TOOLS"$Rcol
-mkdir -vp $LFS/tools
-sudo chown -vR lfs:lfs $SOURCES
-sudo chown -vR lfs:lfs $TOOLS
+#echo -e $blu"Create $yel$LFS/tools$blu and change owner of $yel$SOURCES$blu and $yel$TOOLS"$Rcol
+#mkdir -vp $LFS/tools
+#sudo chown -vR lfs:lfs $SOURCES
+#sudo chown -vR lfs:lfs $TOOLS
 
-echo -e $red"## Call install$BRed binutils 1pass ##"$Rcol
-echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
+#echo -e $red"## Call install$BRed binutils 1pass ##"$Rcol
+#cd $ROOT_PWD
+#. $SUB/install_binutils_1pass.sh
+
+
+#echo -e $red"## Call install$BRed gcc 1pass ##"$Rcol
+#cd $ROOT_PWD
+#. $SUB/install_gcc_1pass.sh
+
+
+#echo -e $red"## Call install$BRed Linux API Header 1pass ##"$Rcol
+#cd $ROOT_PWD
+#. $SUB/install_linux_API_header.sh
+
+echo -e $red"## Call install$BRed Glibc ##"$Rcol
 cd $ROOT_PWD
-echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
-. $SUB/install_binutils_1pass.sh
+. $SUB/install_glibc.sh
 
-
-echo -e $red"## Call install$BRed gcc 1pass ##"$Rcol
-
-echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
+echo -e $red"## CHECK INSTALL 1 PASS ##"$Rcol
 cd $ROOT_PWD
-echo -e "ROOT_PWD ==$yel $ROOT_PWD"$Rcol
-. $SUB/install_gcc_1pass.sh
+. $SUB/check_install_1pass.sh
 
 
 } # End time
