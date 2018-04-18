@@ -1,14 +1,11 @@
 #!/bin/bash
 
-
-
-
 ## Step 4.4
 # Set lfs user environement
-cat > ~/.bash_profile <<EOF
- EOF                                                       
+cat > ~/.bash_profile << EOF
 exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
-EOF
+EOF                                                       
+
 
 cat > ~/.bashrc << EOF
 set +h
