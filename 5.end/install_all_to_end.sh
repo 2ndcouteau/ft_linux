@@ -64,8 +64,105 @@ time {
 	cd $ROOT_PWD
 	. $SUB/install_ncurses.sh
 
+
 	echo -e $red"## Call install$BRed Bash ##"$Rcol
 	cd $ROOT_PWD
 	. $SUB/install_bash.sh
+
+
+	echo -e $red"## Call install$BRed Bison ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_bison.sh
+
+
+	echo -e $red"## Call install$BRed Bzip2 ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_bzip2.sh
+
+
+	echo -e $red"## Call install$BRed Coreutils ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_coreutils.sh
+
+
+	echo -e $red"## Call install$BRed Diffutils ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_diffutils.sh
+
+
+	echo -e $red"## Call install$BRed File ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_file.sh
+
+
+	echo -e $red"## Call install$BRed Findutils ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_findutils.sh
+
+
+	echo -e $red"## Call install$BRed Gawk ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_gawk.sh
+
+
+	echo -e $red"## Call install$BRed Gettext ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_gettext.sh
+
+
+	echo -e $red"## Call install$BRed Grep ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_grep.sh
+
+
+	echo -e $red"## Call install$BRed Gzip ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_gzip.sh
+
+
+	echo -e $red"## Call install$BRed Make ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_make.sh
+
+
+	echo -e $red"## Call install$BRed Patch ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_patch.sh
+
+
+	echo -e $red"## Call install$BRed Perl ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_perl.sh
+
+
+	echo -e $red"## Call install$BRed Sed ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_sed.sh
+
+
+	echo -e $red"## Call install$BRed Tar ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_tar.sh
+
+
+	echo -e $red"## Call install$BRed Texinfo ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_texinfo.sh
+
+
+	echo -e $red"## Call install$BRed Util-linux ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_util-linux.sh
+
+
+	echo -e $red"## Call install$BRed XZ ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/install_xz.sh
+
+## Eventually, here, you can create a script toi clean symbol of object files
+
+	echo -e $red"## Change Owner of $Bred/tools/ ##"$Rcol
+	cd $ROOT_PWD
+	. $SUB/change_owner_tools.sh
 
 } # End time
