@@ -22,4 +22,5 @@ sudo mount -v -t ext4 /dev/sda4 $LFS/home
 # Set lfs user as the owner of all work ressources
 #sudo chown -v -R lfs $LFS/tools
 #sudo chown -v -R lfs $LFS/sources
+echo "Enter the lfs user password"
 su - lfs
