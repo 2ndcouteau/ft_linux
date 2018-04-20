@@ -70,6 +70,7 @@ time {
 	. $SUB/install_bash.sh
 
 
+	######
 	echo -e $red"## Call install$BRed Bison ##"$Rcol
 	cd $ROOT_PWD
 	. $SUB/install_bison.sh
@@ -84,7 +85,7 @@ time {
 	cd $ROOT_PWD
 	. $SUB/install_coreutils.sh
 
-
+	######
 	echo -e $red"## Call install$BRed Diffutils ##"$Rcol
 	cd $ROOT_PWD
 	. $SUB/install_diffutils.sh

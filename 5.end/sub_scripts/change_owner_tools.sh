@@ -1,3 +1,3 @@
 #!/bin/bash
 
-chown -R root:root $LFS/tools
+sudo chown -R root:root $LFS/tools
