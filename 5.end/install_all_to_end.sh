@@ -40,18 +40,18 @@ time {
 	echo -e $red"chown lfs:lfs $TOOLS"$Rcol
 	sudo chown -R lfs:lfs $TOOLS
 
-	echo $yel"Extraction START"$Rcol
+	echo -e $yel"Extraction START"$Rcol
 	./0_uncompress_all.sh
-	echo $blu"Extraction DONE"$Rcol
+	echo -e $blu"Extraction DONE"$Rcol
 	read -p "Press any key to continue... " -n1 -s
 
-	echo $yel"Patch START"$Rcol
+	echo -e $yel"Patch START"$Rcol
 	./1_patch_sources.sh
-	echo $blu"Patches DONE"$Rcol
+	echo -e $blu"Patches DONE"$Rcol
 	read -p "Press any key to continue... " -n1 -s
 
 	{
-		echo $yel"Installation START"$Rcol
+		echo -e $yel"Installation START"$Rcol
 		echo -e $red"## Call install$BRed Tcl-core ##"$Rcol
 		cd $ROOT_PWD
 		. $SUB/install_tcl-core.sh
