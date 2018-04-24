@@ -50,6 +50,10 @@ time {
 	SUB=./sub_scripts
 
 
+	# Create log file of the installations
+	touch $SOURCES/.install.log
+
+
 
 	# Prepare folders and Set owner of working directories
 	echo -e $blu"Create $yel$LFS/tools$blu and change owner of $yel$SOURCES$blu and $yel$TOOLS"$Rcol
@@ -59,11 +63,6 @@ time {
 	echo -e $red"chown lfs:lfs $TOOLS"$Rcol
 	sudo chown -R lfs:lfs $TOOLS
 
-
-
-
-	# Create log file of the installations
-	touch $SOURCES/.install.log
 
 
 
@@ -215,5 +214,5 @@ time {
 		. $SUB/change_owner_tools.sh
 		if [[ $? != 0 ]]; then echo -e $red"Error : chown failed"$Rcol; fi
 
-	} &> $SOURCES/.install.log 
+	} &> $SOURCES/.install.log
 } # End time
