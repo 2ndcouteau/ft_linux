@@ -1,18 +1,6 @@
 #!/bin/bash
 NAME_P="perl"
-
-## XZ config
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
-
-## GZ config
-# OPT="-xzvf"
-# COMPRESSIONS_EXTENSION=".tar.gz"
-
 cd $SOURCES
-
-echo -e $blu"Extract $NAME_P"$Rcol
-tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 cd $NAME_P*/
 
 time {

@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract DejaGNU"$Rcol
-tar -xzvf dejagnu*.tar.gz
 cd dejagnu*/
 
 time {

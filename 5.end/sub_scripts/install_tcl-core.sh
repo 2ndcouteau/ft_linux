@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract tcl-core"$Rcol
-tar -xzvf tcl*.tar.gz
 cd tcl*/
 
 time {

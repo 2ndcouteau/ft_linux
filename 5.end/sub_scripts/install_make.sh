@@ -1,18 +1,6 @@
 #!/bin/bash
 NAME_P="make"
-
-## BZ2 config
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.bz2"
-
-## GZ config
-# OPT="-xzvf"
-# COMPRESSIONS_EXTENSION=".tar.gz"
-
 cd $SOURCES
-
-echo -e $blu"Extract $NAME_P"$Rcol
-tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 cd $NAME_P*/
 
 time {

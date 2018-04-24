@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract Bash"$Rcol
-tar -xzvf bash*.tar.gz
 cd bash*/
 
 time {

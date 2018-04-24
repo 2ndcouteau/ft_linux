@@ -1,15 +1,7 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract Coreutils"$Rcol
-tar -xvf coreutil*.tar.xz
-cp coreutil*.patch coreutil*/
 cd bzip*/
-
-echo -e $red"Patch Coreutils"$Rcol
-echo -e $red"Follow the instructions !"$Rcol
-patch < coreutil*.patch
 
 time {
 	echo -e $red"Run ./configure"$Rcol

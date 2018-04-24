@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract Expect"$Rcol
-tar -xzvf expect*.tar.gz
 cd expect*/
 
 time{

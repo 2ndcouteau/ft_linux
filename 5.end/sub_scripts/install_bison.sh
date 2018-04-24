@@ -1,11 +1,6 @@
 #!/bin/bash
 
-
-SOURCES="/mnt/lfs/sources/"
 cd $SOURCES
-
-echo -e $blu"Extract Bison"$Rcol
-tar -xvf bison*.tar.xz
 cd bison*/
 
 time {

@@ -1,13 +1,6 @@
 #!/bin/bash
 NAME_P="diffutils"
-
-
-SOURCES="/mnt/lfs/sources/"
 cd $SOURCES
-
-echo $SOURCES
-echo -e $blu"Extract $NAME_P"$Rcol
-tar -xvf $NAME_P*.tar.xz
 cd $NAME_P*/
 
 time {

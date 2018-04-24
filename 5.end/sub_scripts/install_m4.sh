@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract M4"$Rcol
-tar -xvf m4*.tar.xz
 cd m4*/
 
 time {

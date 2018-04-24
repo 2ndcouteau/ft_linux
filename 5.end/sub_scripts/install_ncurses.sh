@@ -1,9 +1,6 @@
 #!/bin/bash
 
 cd $SOURCES
-
-echo -e $blu"Extract Ncurses"$Rcol
-tar -xzvf ncurse*.tar.gz
 cd ncurse*/
 
 time {
