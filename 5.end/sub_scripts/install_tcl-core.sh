@@ -27,5 +27,4 @@ time {
 
 	echo -e $blu"Set link"$Rcol
 	ln -sv tclsh8.6 /tools/bin/tclsh
-
 }

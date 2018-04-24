@@ -8,24 +8,33 @@ BRed='\e[1;31m';
 gre='\e[0;32m';
 yel='\e[0;33m';
 blu='\e[0;34m';
-		if [[ $? != 0 ]]; then exit $?; fi
 
 # !!!!!
 # The USER lfs should be in a sudoers
 # !!!!!
+
+## Function declarations
 function continue_or_exit()
 {
-	read input -p "Press Q to exit or Enter to continue : "
-	if [[ $input = "q" ]] || [[ $input = "Q" ]]
-		then exit
+	read -rsn1 -p"Press Q to exit or Enter to continue : " input
+	if [[ $input = "q" ]] || [[ $input = "Q" ]]; then
+		echo "Exit."
+		exit 0
 	fi
+	echo
 }
+##
+
+
 
 time {
 	echo -e $red"################################################"
 	echo -e "# Start Install all packages$BRed 5.11 to end$red #"
 	echo -e "################################################"$Rcol
 
+
+
+	# Set General Variables
 	echo -e $blu"Export$yel \$LFS=/mnt/lfs"
 	export LFS=/mnt/lfs
 
@@ -40,6 +49,9 @@ time {
 	echo -e $blu"Set$yel SUB=./1pass"
 	SUB=./sub_scripts
 
+
+
+	# Prepare folders and Set owner of working directories
 	echo -e $blu"Create $yel$LFS/tools$blu and change owner of $yel$SOURCES$blu and $yel$TOOLS"$Rcol
 	mkdir -vp $LFS/tools
 	echo -e $red"chown lfs:lfs $SOURCES"$Rcol
@@ -47,18 +59,30 @@ time {
 	echo -e $red"chown lfs:lfs $TOOLS"$Rcol
 	sudo chown -R lfs:lfs $TOOLS
 
-	# Create log file of the installations
-	touch $SOURCES/.installations.log
 
+
+
+	# Create log file of the installations
+	touch $SOURCES/.install.log
+
+
+
+	# UNCOMPRESS ALL PACKAGES
 	echo -e $yel"Extraction START"$Rcol
 	./0_uncompress_all.sh
 	echo -e $blux"Extraction DONE"$Rcol
 	continue_or_exit # Function script
 
+
+
+	# PATCH ALL SOURCES
 	echo -e $yel\n"Patch START"$Rcol
 	./1_patch_sources.sh
 	echo -e $blu"Patches DONE"$Rcol
 	continue_or_exit # Function script
+
+
+
 
 	{
 		echo -e $yel"Installation START"$Rcol
@@ -190,5 +214,6 @@ time {
 		cd $ROOT_PWD
 		. $SUB/change_owner_tools.sh
 		if [[ $? != 0 ]]; then echo -e $red"Error : chown failed"$Rcol; fi
-	} > $SOURCES/.installations.log
+
+	} > $SOURCES/.install.log
 } # End time

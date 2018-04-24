@@ -3,7 +3,7 @@
 cd $SOURCES
 cd expect*/
 
-time{
+time {
 	echo -e $blu"Force stty to keep clean install management"$Rcol
 	cp -v configure{,.orig}
 	sed 's:/usr/local/bin:/bin:' configure.orig > configure
@@ -22,5 +22,4 @@ time{
 
 	echo -e $red"make install"$Rcol
 	make SCRIPTS="" install
-
 }

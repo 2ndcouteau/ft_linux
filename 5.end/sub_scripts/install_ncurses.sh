@@ -20,5 +20,4 @@ time {
 
 	echo -e $red"make install"$Rcol
 	make install
-
 }
