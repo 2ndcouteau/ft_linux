@@ -45,10 +45,10 @@ time {
 	echo -e $blux"Extraction DONE"$Rcol
 	read -p "Press any key to continue... " -n1 -s
 
-	echo -e $yel"Patch START"$Rcol
+	echo -e $yel\n"Patch START"$Rcol
 	./1_patch_sources.sh
 	echo -e $blu"Patches DONE"$Rcol
-	read -p "Press any key to continue... " -n1 -s
+	read -p "Press any key to continue... "\n -n1 -s
 
 	{
 		echo -e $yel"Installation START"$Rcol

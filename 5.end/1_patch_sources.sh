@@ -13,12 +13,14 @@ echo -e $red"Patch bzip2"$Rcol
 echo -e $red"Follow the instructions !"$Rcol
 patch < bzip*.patch
 
-
+echo -e \n\n
 ## PATCH COREUTILS
 cd $SOURCES
 cp coreutil*.patch coreutil*/
-cd bzip*/
+cd coreutil*/
 
 echo -e $red"Patch Coreutils"$Rcol
 echo -e $red"Follow the instructions !"$Rcol
 patch < coreutil*.patch
+
+echo -e \n\n
