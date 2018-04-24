@@ -42,7 +42,7 @@ time {
 
 	echo -e $yel"Extraction START"$Rcol
 	./0_uncompress_all.sh
-	echo -e $blu"Extraction DONE"$Rcol
+	echo -e $blux"Extraction DONE"$Rcol
 	read -p "Press any key to continue... " -n1 -s
 
 	echo -e $yel"Patch START"$Rcol
