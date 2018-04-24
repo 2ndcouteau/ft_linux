@@ -215,5 +215,5 @@ time {
 		. $SUB/change_owner_tools.sh
 		if [[ $? != 0 ]]; then echo -e $red"Error : chown failed"$Rcol; fi
 
-	} > $SOURCES/.install.log
+	} &> $SOURCES/.install.log 
 } # End time
