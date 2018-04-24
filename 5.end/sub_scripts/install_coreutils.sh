@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd $SOURCES
-cd bzip*/
+cd coreutils*/
 
 time {
 	echo -e $red"Run ./configure"$Rcol
