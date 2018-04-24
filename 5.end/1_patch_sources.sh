@@ -10,17 +10,28 @@ cp bzip*.patch bzip*/
 cd bzip*/
 
 echo -e $red"Patch bzip2"$Rcol
-echo -e $red"Follow the instructions !"$Rcol
 patch < bzip*.patch
+if [[ $? != 0 ]]; then
+		echo -e $red"Patch Failed"$Rcol ;
+		exit 1
+	else
+		echo -e $gre"Patch Done"$Rcol ;
+fi
 
-echo -e \n\n
+echo -e \\n\\n
+
 ## PATCH COREUTILS
 cd $SOURCES
 cp coreutil*.patch coreutil*/
 cd coreutil*/
 
-echo -e $red"Patch Coreutils"$Rcol
-echo -e $red"Follow the instructions !"$Rcol
-patch < coreutil*.patch
+echo -e $blu"Patch Coreutils"$Rcol
+patch -p1 < coreutil*.patch
+if [[ $? != 0 ]]; then
+		echo -e $red"Patch Failed"$Rcol ;
+		exit 1
+	else
+		echo -e $gre"Patch Done"$Rcol ;
+fi
 
-echo -e \n\n
+echo -e \\n\\n
