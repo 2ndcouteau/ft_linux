@@ -76,6 +76,8 @@ echo --
 	makeinfo --version | head -n1
 echo --
 	xz --version | head -n1
+echo --
+	automake --version | head -n1
 
 echo --
 
