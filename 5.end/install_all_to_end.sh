@@ -199,7 +199,7 @@ time {
 
 		echo -e $red"## Call install$BRed Util-linux ##"$Rcol
 		cd $ROOT_PWD
-		. $SUB/install_util-linux.sh
+		. $SUB/install_util_linux.sh
 		if [[ $? != 0 ]]; then exit $?; fi
 
 		echo -e $red"## Call install$BRed XZ ##"$Rcol
