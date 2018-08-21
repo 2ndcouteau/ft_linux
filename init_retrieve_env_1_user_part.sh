@@ -7,7 +7,7 @@ export LFS=/mnt/lfs
 
 ## Step 2.7
 ## NOTE
-### Volume for swap and boot exist yet
+### Volumes for swap and boot exist yet
 
 # Create repo for /
 sudo mkdir -pv $LFS
