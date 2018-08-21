@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
+## Step 2.6
+### Initialization LFS env variable
+export LFS=/mnt/lfs
 
 
 ## Step 2.7
