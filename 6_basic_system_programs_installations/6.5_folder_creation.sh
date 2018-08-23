@@ -1,4 +1,3 @@
-#!/bin/bash
 
 Rcol='\e[0m',    # Text Reset
 red='\e[0;31m';
