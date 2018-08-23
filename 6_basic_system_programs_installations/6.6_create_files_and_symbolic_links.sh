@@ -60,8 +60,4 @@ EOF
 ## Restart shell
 exec /tools/bin/bash --login +h
 
-## Creation log file installation
-touch /var/log/{btmp,lastlog,faillog,wtmp}
-chgrp -v utmp /var/log/lastlog
-chmod -v 664  /var/log/lastlog
-chmod -v 600  /var/log/btmp
+## Do not forget the 6.6.9 script
