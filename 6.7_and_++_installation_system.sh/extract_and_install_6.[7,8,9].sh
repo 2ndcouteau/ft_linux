@@ -201,29 +201,27 @@ time {
 
 			# Create file.conf for network compliance
 			cat > /etc/nsswitch.conf << "EOF"
-			# Begin /etc/nsswitch.conf
-			passwd: files
-			group: files
-			shadow: files
-			\
-			hosts: files dns
-			networks: files
-			\
-			protocols: files
-			services: files
-			ethers: files
-			rpc: files
-			# End /etc/nsswitch.conf
-			EOF
+# Begin /etc/nsswitch.conf
+passwd: files
+group: files
+shadow: files
+hosts: files dns
+networks: files
+protocols: files
+services: files
+ethers: files
+rpc: files
+# End /etc/nsswitch.conf
+EOF
 
 			# Add folders to the dynamic lib file configuration
 			## Note -- this step is normaly after the time zone configuration
 			## But had be moved because of script compliance
 			cat > /etc/ld.so.conf << "EOF"
-			# Début de /etc/ld.so.conf
-			/usr/local/lib
-			/opt/lib
-			EOF
+# Début de /etc/ld.so.conf
+/usr/local/lib
+/opt/lib
+EOF
 
 			## Timezone configuration
 			tar -xf ../../tzdata2018c.tar.gz
