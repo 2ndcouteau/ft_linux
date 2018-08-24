@@ -1,6 +1,25 @@
 #!/bin/bash
 SOURCES="/mnt/lfs/sources/"
 
+## You should factorise all those bad functions
+
+## Step 1) Function declaration:
+
+### function remove_sources {
+### echo -e $blu"Remove $1"$Rcol
+###	sudo rm -rf $SOURCES/$1*
+###}
+#### --> Just be sure $1 is incremented correctly
+
+
+## Step 2) Call function:
+
+### remove_sources {
+### "name1",
+### "name2",
+### "name3"
+### }
+
 #
 echo -e $blu"Remove Bash"$Rcol
 sudo rm -rf $SOURCES/bash*/

@@ -47,10 +47,14 @@ tar -xzvf tcl*.tar.gz
 if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 
 
-# Start Composition Extract
-NAME_P="file"
+# Start Composition Extract #
+#############################
+## Extract tar.gz archives ##
+#############################
 OPT="-xzvf"
 COMPRESSIONS_EXTENSION=".tar.gz"
+
+NAME_P="file"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -58,17 +62,30 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="findutils"
-OPT="-xzvf"
-COMPRESSIONS_EXTENSION=".tar.gz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
 if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
+#############################
+## Extract tar.bz2 archive ##
+#############################
+OPT="-xvf"
+COMPRESSIONS_EXTENSION=".tar.bz2"
 
-NAME_P="gawk"
+NAME_P="make"
+echo -e $blu"Extract $NAME_P"$Rcol
+tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
+
+if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
+#
+#############################
+## Extract tar.xz archives ##
+#############################
 OPT="-xvf"
 COMPRESSIONS_EXTENSION=".tar.xz"
+
+NAME_P="gawk"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -76,8 +93,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="gettext"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -85,8 +100,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="grep"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -94,17 +107,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="gzip"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
-echo -e $blu"Extract $NAME_P"$Rcol
-tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
-
-if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
-#
-
-NAME_P="make"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.bz2"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -112,8 +114,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="patch"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -121,8 +121,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="perl"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -130,8 +128,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="sed"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -139,8 +135,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="tar"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -148,8 +142,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="texinfo"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -157,8 +149,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="util-linux"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 
@@ -166,8 +156,6 @@ if [[ $? != 0 ]]; then errors_counter=$((errors_counter+1)); fi
 #
 
 NAME_P="xz"
-OPT="-xvf"
-COMPRESSIONS_EXTENSION=".tar.xz"
 echo -e $blu"Extract $NAME_P"$Rcol
 tar $OPT $NAME_P*$COMPRESSIONS_EXTENSION
 

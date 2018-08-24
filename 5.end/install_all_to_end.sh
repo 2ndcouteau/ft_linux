@@ -42,11 +42,11 @@ time {
 	SOURCES=$LFS/sources
 	echo -e $blu"Set$yel TOOLS=/mnt/lfs/tools"
 	TOOLS=$LFS/tools
-	echo -e $blu"Set$yel PWD=$(pwd)"
+	echo -e $blu"Set$yel ROOT_PWD=$(pwd)"
 
 	ROOT_PWD=$(pwd)/
 
-	echo -e $blu"Set$yel SUB=./1pass"
+	echo -e $blu"Set$yel SUB=./sub_scripts"
 	SUB=./sub_scripts
 
 
