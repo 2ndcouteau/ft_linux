@@ -1,5 +1,9 @@
 # Roadmap.mp ft_linux Project
 
+## Errors:
+	* Error with the pass
+		* check the .install.log file
+
 
 ### In Progress:
 

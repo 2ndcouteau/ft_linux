@@ -29,6 +29,8 @@ function show_date()
 	echo -e "$blu\Current date:$red $date$Rcol"
 }
 
+## Need to define SOURCES before the time, because of the redirection &> .file.log
+SOURCES=/sources/
 time {
 	echo -e $red"#########################################"
 	echo -e "# Start Install all packages$BRed 6.7 to 6.9$red #"
@@ -36,16 +38,17 @@ time {
 
 	show_date;
 	## Parameters declarations:
-	SOURCES="/sources/"
+	echo $SOURCES '==pwd'
 	cd $SOURCES
+	echo $SOURCES '==pwd'
 	errors_counter=0
-
-	OPT="-xvf"
-	COMPRESSIONS_EXTENSION=".tar.xz"
 
 	############################################################################
 	#						SOURCES EXTRACTION								   #
 	############################################################################
+
+	OPT="-xvf"
+	COMPRESSIONS_EXTENSION=".tar.xz"
 	echo -e $yel"Extraction START"$Rcol
 	## uncompress calls
 	uncompress "linux-"
