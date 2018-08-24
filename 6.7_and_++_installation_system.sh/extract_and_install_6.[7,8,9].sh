@@ -26,7 +26,7 @@ function continue_or_exit()
 function show_date()
 {
 	date=$( date )
-	echo "$blu\Current date:$red $date$Rcol"
+	echo -e "$blu\Current date:$red $date$Rcol"
 }
 
 time {
@@ -75,7 +75,8 @@ time {
 		echo -e $red"## Call install$BRed linux-header$red ##"$Rcol
 		time {
 			show_date;
-			cd $SOURCES/linux-*
+			cd $SOURCES
+			cd linux-*/
 
 			## Clean the folder from a potential previus installation
 			echo -e $red"make mrproper"$Rcol
@@ -93,7 +94,8 @@ time {
 		echo -e $red"## Call install$BRed man-pages$red ##"$Rcol
 		time {
 			show_date;
-			cd $SOURCES/man-pages*
+			cd $SOURCES
+			cd man-pages*/
 
 			echo -e $red"make install"$Rcol
 			make install
@@ -104,7 +106,8 @@ time {
 		echo -e $red"## Call install$BRed glibc$red ##"$Rcol
 		time{
 			show_date;
-			cd $SOURCES/glibc*
+			cd $SOURCES
+			cd glibc*/
 
 			## PATCH GLIBC
 			echo -e $red"Patch glibc"$Rcol
