@@ -205,10 +205,10 @@ time {
 			passwd: files
 			group: files
 			shadow: files
-
+			\
 			hosts: files dns
 			networks: files
-
+			\
 			protocols: files
 			services: files
 			ethers: files
