@@ -241,8 +241,7 @@ time {
 
 			echo $blu"Please finish the time zone configuration manualy"
 			echo "cf: 6.9.2.2 LFS-8.2 p.96"$Rcol
+
 		} # End time() glibc
-
 	} &> $SOURCES/.install_6-7_to_6-9.log
-
 } # End time()
