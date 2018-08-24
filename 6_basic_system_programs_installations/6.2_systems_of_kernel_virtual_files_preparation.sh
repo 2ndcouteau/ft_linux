@@ -12,13 +12,14 @@ echo -e $red"######################################"
 echo -e "# Init basic sytem file installation #"
 echo -e "######################################"$Rcol
 
-## Disconnect from "lfs" user
-if whoami | grep -Fxq 'lfs' ; then
-	exit ;
+if whoami | grep -vFxq 'root' ; then
+	echo "You have to be root"
+	echo "Connect as root then restart the script"
+	echo "Be carreful, you must not be connect in the chroot part for the moment"
+	exit
 fi
 
-## Connect to "root" user.
-su ;
+LFS=/mnt/lfs/
 
 ## Create folders for the system files mount
 mkdir -pv $LFS/{dev,proc,sys,run}

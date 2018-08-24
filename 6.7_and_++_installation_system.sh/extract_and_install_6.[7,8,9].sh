@@ -31,6 +31,7 @@ function show_date()
 
 ## Need to define SOURCES before the time, because of the redirection &> .file.log
 SOURCES='/sources/'
+
 time {
 	echo -e $red"#########################################"
 	echo -e "# Start Install all packages$BRed 6.7 to 6.9$red #"
@@ -107,7 +108,7 @@ time {
 		## Install glibc ##
 		#################
 		echo -e $red"## Call install$BRed glibc$red ##"$Rcol
-		time{
+		time {
 			show_date;
 			cd $SOURCES
 			cd glibc*/

@@ -1,9 +1,9 @@
 # Roadmap.mp ft_linux Project
 
 ## Errors:
-	* Error with the pass
-		* check the .install.log file
-
+	* 6.2 script have not been run correctly
+		- Some folder have not been created
+		--> $LFS have not been declarated correctly
 
 ### In Progress:
 
@@ -15,4 +15,6 @@
 	--> see 6.7 test.sh
 
 ### Done:
-.
+* Error with the pass
+	* check the .install.log file
+	--> Be carreful where you make the path declaration
