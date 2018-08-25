@@ -1,7 +1,5 @@
 #!/bin/bash
 
-## TMP -- Put this in the master call script
-
 Rcol='\e[0m',    # Text Reset
 red='\e[0;31m';
 BRed='\e[1;31m';
@@ -80,132 +78,38 @@ time {
 	echo -e $blu"Patches DONE"$Rcol
 	continue_or_exit # Function script
 
-
-
-
 	{
 		echo -e $yel"Installation START"$Rcol
-		echo -e $red"## Call install$BRed Tcl-core ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_tcl-core.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Expect ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_expect.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed DejaGNU ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_dejaGNU.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed M4 ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_m4.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Ncurses ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_ncurses.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Bash ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_bash.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		######
-		echo -e $red"## Call install$BRed Bison ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_bison.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Bzip2 ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_bzip2.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Coreutils ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_coreutils.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		######
-		echo -e $red"## Call install$BRed Diffutils ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_diffutils.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed File ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_file.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Findutils ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_findutils.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Gawk ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_gawk.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Gettext ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_gettext.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Grep ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_grep.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Gzip ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_gzip.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Make ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_make.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Patch ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_patch.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Perl ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_perl.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Sed ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_sed.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Tar ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_tar.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Texinfo ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_texinfo.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed Util-linux ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_util_linux.sh
-		if [[ $? != 0 ]]; then exit $?; fi
-
-		echo -e $red"## Call install$BRed XZ ##"$Rcol
-		cd $ROOT_PWD
-		. $SUB/install_xz.sh
-		if [[ $? != 0 ]]; then exit $?; fi
+		for prog_name in 	tcl-core.sh\
+							expect.sh\
+							dejaGNU.sh\
+							m4.sh\
+							ncurses.sh\
+							bash.sh\
+							bison.sh\
+							bzip2.sh\
+							coreutils.sh\
+							diffutils.sh\
+							file.sh\
+							findutils.sh\
+							gawk.sh\
+							gettext.sh\
+							grep.sh\
+							gzip.sh\
+							make.sh\
+							patch.sh\
+							perl.sh\
+							sed.sh\
+							tar.sh\
+							texinfo.sh\
+							util_linux.sh\
+							xz.sh
+		do
+			echo -e $red"## Call install$BRed $prog_name ##"$Rcol
+			cd $ROOT_PWD
+			. $SUB/install_$prog_name
+			if [[ $? != 0 ]]; then exit $?; fi
+		done
 
 	## Eventually, here, you can create a script to clean symbol of object files
 
@@ -216,3 +120,130 @@ time {
 
 	} &> $SOURCES/.install.log
 } # End time
+
+###########################
+#### OLD INSTALL SCRIPT ###
+###########################
+#
+# echo -e $red"## Call install$BRed $prog_name ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_tcl-core.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+#
+# echo -e $red"## Call install$BRed Expect ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_expect.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed DejaGNU ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_dejaGNU.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed M4 ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_m4.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Ncurses ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_ncurses.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Bash ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_bash.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# ######
+# echo -e $red"## Call install$BRed Bison ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_bison.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Bzip2 ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_bzip2.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Coreutils ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_coreutils.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# ######
+# echo -e $red"## Call install$BRed Diffutils ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_diffutils.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed File ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_file.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Findutils ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_findutils.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Gawk ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_gawk.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Gettext ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_gettext.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Grep ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_grep.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Gzip ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_gzip.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Make ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_make.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Patch ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_patch.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Perl ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_perl.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Sed ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_sed.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Tar ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_tar.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Texinfo ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_texinfo.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed Util-linux ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_util_linux.sh
+# if [[ $? != 0 ]]; then exit $?; fi
+#
+# echo -e $red"## Call install$BRed XZ ##"$Rcol
+# cd $ROOT_PWD
+# . $SUB/install_xz.sh
+# if [[ $? != 0 ]]; then exit $?; fi
