@@ -39,9 +39,7 @@ time {
 
 	show_date;
 	## Parameters declarations:
-	echo -e $SOURCES '==pwd'
 	cd $SOURCES
-	echo -e $SOURCES '==pwd'
 	errors_counter=0
 
 	############################################################################
@@ -56,17 +54,14 @@ time {
 	uncompress "man-pages-"
 	uncompress "glibc-"
 
-	echo -e $blux"Extraction DONE"$Rcol
-	continue_or_exit # Function script
-
-
 	## Check Error Exraction
 	if [[ ($errors_counter == 0) ]]; then
-			echo -e $blu"[*] Done."$Rcol
-		else
-			echo -e $red"[!] Error: There was an error in Extraction."$Rcol
-			exit $errors_counter
+		echo -e $blu"[*] Extraction Done."$Rcol
+	else
+		echo -e $red"[!] Error: There was an error in Extraction."$Rcol
+		exit $errors_counter
 	fi
+	continue_or_exit # Function script
 
 	## open bracket to redirect installations outputs
 	{
