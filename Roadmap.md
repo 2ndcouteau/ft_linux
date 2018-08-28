@@ -6,7 +6,8 @@
 
 * Run 6.* installation
 	* 6.7 to 6.9 DONE
-	* 6.10 Tools chain adjustment
+	* 6.10 Tools chain adjustment Done
+	* 6.11 to 6.19 install all binaries
 
 ### Done:
 * Error with the pass
