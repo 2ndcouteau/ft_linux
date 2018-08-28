@@ -5,7 +5,8 @@
 ### In Progress:
 
 * Run 6.* installation
-	--> see 6.7 test.sh
+	* 6.7 to 6.9 DONE
+	* 6.10 Tools chain adjustment
 
 ### Done:
 * Error with the pass
