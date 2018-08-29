@@ -8,7 +8,7 @@ blu='\e[0;34m';
 
 time {
 	echo -e ${red}"#################################################"
-	echo -e "# Start Install all packages${BRed} 6.21 to 6.77${red} #"
+	echo -e "# Start Install all packages${BRed} 6.21 to 6.34${red} #"
 	echo -e "#################################################"${Rcol}
 
 
@@ -28,6 +28,14 @@ time {
 						acl.sh\
 						libcap.sh\
 						sed.sh\
+						shadow.sh\
+						psmisc.sh\
+						iana-etc.sh\
+						bison.sh\
+						flex.sh\
+						grep.sh\
+						bash.sh\
+
 	do
 		echo -e ${red}"## Call install${BRed} $prog_name ${red} ##"${Rcol}
 		cd $ROOT_PWD

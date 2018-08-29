@@ -34,6 +34,8 @@ for archive in	'bzip2-'\
 				'attr-'\
 				'acl-'\
 				'libcap-'\
+				'flex-'\
+				'bash-'\
 do
 	uncompress $archive
 done
@@ -41,10 +43,13 @@ done
 #############################
 ## Extract tar.bz2 archive ##
 #############################
-# OPT="-xvf"
-# COMPRESSIONS_EXTENSION=".tar.bz2"
-#
-# uncompress
+OPT="-xvf"
+COMPRESSIONS_EXTENSION=".tar.bz2"
+
+for archive in 	'iana-etc-'
+do
+	uncompress $archive
+done
 
 #############################
 ## Extract tar.xz archives ##
@@ -53,6 +58,10 @@ OPT="-xvf"
 COMPRESSIONS_EXTENSION=".tar.xz"
 
 for archive in 	'sed-'\
+				'shadow-'\
+				'psmisc-'\
+				'bison-'\
+				'grep-'\
 do
 	uncompress $archive
 done

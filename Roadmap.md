@@ -10,8 +10,9 @@
 	* 6.10 Tools chain adjustment Done
 	* 6.11 to 6.19 install all binaries DONE
 	* 6.20 --> actually in progress
-	* write 6.21 to 6.77 extract, patch and install script
-		--> maybe in two parts
+	* write 6.21 to 6.34 extract, patch and install script DONE
+	* write 6.21 to 6.34 extract, patch and install script -- in progress
+
 		--> Perl, automake, autoconf, e2fsprogs (>4SBU) can be long
 
 

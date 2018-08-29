@@ -13,7 +13,6 @@ time {
 	sed -i 's/usr/tools/'                 build-aux/help2man
 	sed -i 's/testsuite.panic-tests.sh//' Makefile.in
 
-
 	echo -e ${red}"Configure binary"${Rcol}
 	./configure --prefix=/usr --bindir=/bin
 
