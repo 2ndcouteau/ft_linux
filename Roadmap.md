@@ -4,6 +4,7 @@
 
 ### In Progress:
 
+
 * Run 6.* installation
 	* 6.7 to 6.9 DONE
 	* 6.10 Tools chain adjustment Done
@@ -11,8 +12,8 @@
 	* 6.20 --> actually in progress
 	* write 6.21 to 6.77 extract, patch and install script
 		--> maybe in two parts
+		--> Perl, automake, autoconf, e2fsprogs (>4SBU) can be long
 
-* Write remove/clean script for 6.7 to 6.20 source extracted folders
 
 ### Done:
 * Error with the pass
@@ -29,3 +30,6 @@
 	* 5.end/0_...sh
 	* 5.end/3_...sh
 	* install_all_to_end.sh
+
+* !!!! Write remove/clean script for 6.7 to 6.20 source extracted folders
+	--> Lot of memory to save

@@ -144,6 +144,11 @@ time {
 		mkdir -pv /usr/share/gdb/auto-load/usr/lib
 		mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 
+		echo -e $blu"Remove uncompress sources"$Rcol
+		rm -rvf /sources/*/
+		echo -e $red"DONE"$Rcol
+
 		echo -e ${red}"GCC install DONE"${Rcol}
+
 	} &> /sources/.612.log
 }

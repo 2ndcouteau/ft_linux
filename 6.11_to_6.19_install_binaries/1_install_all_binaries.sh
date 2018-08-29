@@ -12,12 +12,12 @@ time {
 	echo -e "#################################################"$Rcol
 
 
-	echo -e $blu"Set$yel SOURCES=/sources"
+	echo -e $blu"Set$yel SOURCES=/sources"$Rcol
 	SOURCES=/sources
-	echo -e $blu"Set$yel ROOT_PWD=$(pwd)"
+	echo -e $blu"Set$yel ROOT_PWD=$(pwd)"$Rcol
 	ROOT_PWD=$(pwd)/
 
-	echo -e $blu"Set$yel SUB=./sub_scripts"
+	echo -e $blu"Set$yel SUB=./sub_scripts"$Rcol
 	SUB=./sub_scripts
 
 	echo -e $yel"Installation START"$Rcol
