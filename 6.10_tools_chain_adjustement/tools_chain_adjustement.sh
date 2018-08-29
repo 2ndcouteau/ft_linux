@@ -98,4 +98,4 @@ continue_or_exit;
 	echo -e ${blu}"Clean test files"${Rcol}
 	rm -v dummy.c a.out dummy.log
 	echo -e ${red}'End of tools chain adjustment !'${Rcol}
-} > /sources/.610.log
+} &> /sources/.610.log

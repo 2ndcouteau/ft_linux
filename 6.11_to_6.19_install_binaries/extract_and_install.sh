@@ -20,6 +20,6 @@ time {
 		. ./1_install_all_binaries.sh
 
 		if [[ $? != 0 ]]; then exit $?; fi
-	}  > /sources/.611_to_619.log
+	}  &> /sources/.611_to_619.log
 	echo -e ${blu}"All extract and install DONE"${Rcol}
 }
