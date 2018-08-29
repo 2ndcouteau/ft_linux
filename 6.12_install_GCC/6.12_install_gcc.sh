@@ -23,10 +23,18 @@ time {
 		echo -e "# Start Install${BRed} 6.12 GCC${red} #"
 		echo -e "###########################"${Rcol}
 
-		echo -e ${blu}"Set${yel} SOURCES=/sources"
+		echo -e ${blu}"Set${yel} SOURCES=/sources"${Rcol}
 		SOURCES=/sources
-		echo -e ${blu}"Set${yel} ROOT_PWD=$(pwd)"
+		echo -e ${blu}"Set${yel} ROOT_PWD=$(pwd)"${Rcol}
 		ROOT_PWD=$(pwd)/
+
+		cd $SOURCES
+		echo -e ${red}"Extract GCC"${Rcol}
+		tar -xvf gcc-*.tar.xz
+		if [[ $? != 0 ]]; then
+			exit;
+		fi
+		cd gcc-*/
 
 		echo -e ${red}"Config for x86_64"${Rcol}
 		case $(uname -m) in
@@ -137,5 +145,5 @@ time {
 		mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 
 		echo -e ${red}"GCC install DONE"${Rcol}
-	} &> ".612.log"
+	} &> /sources/.612.log
 }
