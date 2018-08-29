@@ -7,7 +7,12 @@
 * Run 6.* installation
 	* 6.7 to 6.9 DONE
 	* 6.10 Tools chain adjustment Done
-	* 6.11 to 6.19 install all binaries
+	* 6.11 to 6.19 install all binaries DONE
+	* 6.20 --> actually in progress
+	* write 6.21 to 6.77 extract, patch and install script
+		--> maybe in two parts
+
+* Write remove/clean script for 6.7 to 6.20 source extracted folders
 
 ### Done:
 * Error with the pass

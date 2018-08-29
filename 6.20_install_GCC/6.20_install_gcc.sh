@@ -20,7 +20,7 @@ function continue_or_exit()
 time {
 	{
 		echo -e ${red}"###########################"
-		echo -e "# Start Install${BRed} 6.12 GCC${red} #"
+		echo -e "# Start Install${BRed} 6.20 GCC${red} #"
 		echo -e "###########################"${Rcol}
 
 		echo -e ${blu}"Set${yel} SOURCES=/sources"${Rcol}
