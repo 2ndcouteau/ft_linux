@@ -38,6 +38,11 @@ time {
 						sysklogd.sh\
 						sysvinit.sh\
 						eudev.sh\
+						util-linux.sh\
+						man-db.sh\
+						tar.sh\
+						texinfo.sh\
+						vim.sh
 	do
 		echo -e ${red}"## Call install${BRed} $prog_name ${red} ##"${Rcol}
 		cd $ROOT_PWD

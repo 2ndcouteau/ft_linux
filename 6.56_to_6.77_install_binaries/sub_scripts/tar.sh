@@ -5,11 +5,13 @@ gre='\e[0;32m';
 yel='\e[0;33m';
 blu='\e[0;34m';
 
-cd /sources/kdb-*/
+cd /sources/tar-*/
 
 time {
 	echo -e ${red}"Configure binary"${Rcol}
-	./configure --prefix=/usr
+	FORCE_UNSAFE_CONFIGURE=1  \
+	./configure --prefix=/usr \
+				--bindir=/bin
 
 	echo -e ${red}"make"${Rcol}
 	make
@@ -20,6 +22,7 @@ time {
 
 	echo -e ${red}"make install"${Rcol}
 	make install
+	make -C doc install-html docdir=/usr/share/doc/tar-1.30
 
-	echo -e ${blu}'time install kdb.sh'${Rcol}
+	echo -e ${blu}'time install tar.sh'${Rcol}
 }

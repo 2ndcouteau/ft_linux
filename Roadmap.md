@@ -6,12 +6,12 @@
 
 
 * Run 6.* installation
-	* 6.7 to 6.9 DONE
+	* 6.07 to 6.09 DONE
 	* 6.10 Tools chain adjustment Done
 	* 6.11 to 6.19 install all binaries DONE
-	* 6.20 --> actually in progress
-	* write 6.21 to 6.34 extract, patch and install script DONE
-	* write 6.35 to 6.55 extract, patch and install script DONE
+	* 6.20 DONE
+	* 6.21 to 6.34 extract, patch and install script DONE
+	* 6.35 to 6.55 extract, patch and install script In Progress
 	* write 6.36 to 6.77 extract, patch and install script DONE
 
 		--> Perl, automake, autoconf, e2fsprogs (>4SBU) can be long

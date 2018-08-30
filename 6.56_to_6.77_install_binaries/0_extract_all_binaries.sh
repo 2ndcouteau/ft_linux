@@ -35,7 +35,7 @@ for archive in	'check-'\
 				'less-'\
 				'libpipeline-'\
 				'sysklogd-'\
-				'eudev-'\
+				'eudev-'
 do
 	uncompress $archive
 done
@@ -48,6 +48,7 @@ COMPRESSIONS_EXTENSION=".tar.bz2"
 
 for archive in 	'make-'\
 				'sysvinit-'\
+				'vim-'
 do
 	uncompress $archive
 done
@@ -65,7 +66,11 @@ for archive in 	'coreutils-'\
 				'gzip-'\
 				'iproute2-'\
 				'kdb-'\
-				'patch-'
+				'patch-'\
+				'util-linux-'\
+				'man-db-'\
+				'tar-'\
+				'texinfo-'
 do
 	uncompress $archive
 done
