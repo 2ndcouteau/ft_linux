@@ -1,0 +1,36 @@
+Rcol='\e[0m',    # Text Reset
+red='\e[0;31m';
+BRed='\e[1;31m';
+gre='\e[0;32m';
+yel='\e[0;33m';
+blu='\e[0;34m';
+
+cd /sources/kmod-*/
+
+time {
+	echo -e ${red}"Configure binary"${Rcol}
+	./configure --prefix=/usr          \
+				--bindir=/bin          \
+				--sysconfdir=/etc      \
+				--with-rootlibdir=/lib \
+				--with-xz              \
+				--with-zlib
+
+	echo -e ${red}"make"${Rcol}
+	make
+
+	echo -e $red"By-pass test... or No test$NAME_P"$Rcol
+	# echo -e ${red}"make check"${Rcol}
+	# make check
+
+	echo -e ${red}"make install"${Rcol}
+	make install
+
+	echo -e ${red}"Create symbolic link for kernel retro compatibility (Module-Init-Tools)"${Rcol}
+	for target in depmod insmod lsmod modinfo modprobe rmmod; do
+	  ln -sfv ../bin/kmod /sbin/$target
+	done
+	ln -sfv kmod /bin/lsmod
+
+	echo -e ${blu}'time install kmod.sh'${Rcol}
+}

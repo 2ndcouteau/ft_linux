@@ -30,6 +30,9 @@ COMPRESSIONS_EXTENSION=".tar.gz"
 
 for archive in	'gdbm-'\
 				'gperf-'\
+				'XML-Parser-'\
+				'libffi-'\
+				'openssl-'\
 do
 	uncompress $archive
 done
@@ -41,6 +44,7 @@ OPT="-xvf"
 COMPRESSIONS_EXTENSION=".tar.bz2"
 
 for archive in 	'expat-'\
+				'elfutils-'\
 do
 	uncompress $archive
 done
@@ -54,6 +58,13 @@ COMPRESSIONS_EXTENSION=".tar.xz"
 for archive in 	'libtool-'\
 				'inetutils'\
 				'perl-'\
+				'intltool-'\
+				'autoconf-'\
+				'automake-'\
+				'xz-'\
+				'kmod-'\
+				'gettext-'\
+				'Python-'\
 do
 	uncompress $archive
 done

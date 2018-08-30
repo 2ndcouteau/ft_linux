@@ -27,6 +27,17 @@ time {
 						expat.sh\
 						inetutils.sh\
 						perl.sh\
+						xml-parser.sh\
+						intltool.sh\
+						autoconf.sh\
+						automake.sh\
+						xz.sh\
+						kmod.sh\
+						gettext.sh\
+						libelf.sh\
+						libffi.sh\
+						openssl.sh\
+						python.sh\
 	do
 		echo -e ${red}"## Call install${BRed} $prog_name ${red} ##"${Rcol}
 		cd $ROOT_PWD
