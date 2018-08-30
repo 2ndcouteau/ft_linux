@@ -36,6 +36,7 @@ for archive in	'gdbm-'\
 				'openssl-'\
 				'ninja-'\
 				'meson-'\
+				'intltool-'\
 				'e2fsprogs-'
 do
 	uncompress $archive
@@ -62,7 +63,6 @@ COMPRESSIONS_EXTENSION=".tar.xz"
 for archive in 	'libtool-'\
 				'inetutils'\
 				'perl-'\
-				'intltool-'\
 				'autoconf-'\
 				'automake-'\
 				'xz-'\

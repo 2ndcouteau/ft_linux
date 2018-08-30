@@ -8,7 +8,7 @@ blu='\e[0;34m';
 
 time {
 	echo -e ${red}"#################################################"
-	echo -e "# Start Install all packages${BRed} 6.35 to 6.77${red} #"
+	echo -e "# Start Install all packages${BRed} 6.35 to 6.55${red} #"
 	echo -e "#################################################"${Rcol}
 
 
