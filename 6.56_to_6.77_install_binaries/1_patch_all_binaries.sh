@@ -15,11 +15,11 @@ if [[ $? != 0 ]]; then
 	nb_error=$((nb_error+1));
 fi
 
-echo -e $red"Patch Kdb"$Rcol
-cd /sources/kdb-*/
+echo -e $red"Patch Kbd"$Rcol
+cd /sources/kbd-*/
 patch -Np1 -i ../kbd-2.0.4-backspace-1.patch
 if [[ $? != 0 ]]; then
-	echo -e ${red}"Patch kdb failed"${Rcol}
+	echo -e ${red}"Patch kbd failed"${Rcol}
 	nb_error=$((nb_error+1));
 fi
 

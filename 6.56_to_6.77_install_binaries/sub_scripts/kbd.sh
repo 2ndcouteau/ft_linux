@@ -5,7 +5,7 @@ gre='\e[0;32m';
 yel='\e[0;33m';
 blu='\e[0;34m';
 
-cd /sources/kdb-*/
+cd /sources/kbd-*/
 
 time {
 	echo -e ${red}"Configure binary"${Rcol}
@@ -21,5 +21,5 @@ time {
 	echo -e ${red}"make install"${Rcol}
 	make install
 
-	echo -e ${blu}'time install kdb.sh'${Rcol}
+	echo -e ${blu}'time install kbd.sh'${Rcol}
 }

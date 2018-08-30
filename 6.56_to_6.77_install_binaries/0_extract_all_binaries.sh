@@ -65,7 +65,7 @@ for archive in 	'coreutils-'\
 				'grub-'\
 				'gzip-'\
 				'iproute2-'\
-				'kdb-'\
+				'kbd-'\
 				'patch-'\
 				'util-linux-'\
 				'man-db-'\

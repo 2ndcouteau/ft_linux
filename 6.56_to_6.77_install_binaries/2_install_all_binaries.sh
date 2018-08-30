@@ -31,7 +31,7 @@ time {
 						less.sh\
 						gzip.sh\
 						iproute2.sh\
-						kdb.sh\
+						kbd.sh\
 						libpipeline.sh\
 						make.sh\
 						patch.sh\
