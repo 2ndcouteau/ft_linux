@@ -17,3 +17,5 @@ if [[ $? != 0 ]]; then
 fi
 
 if [[ $nb_error != 0 ]]; then echo -e ${yel}"PATCH FAILDED !!"${Rcol} ; fi
+
+return $nb_error

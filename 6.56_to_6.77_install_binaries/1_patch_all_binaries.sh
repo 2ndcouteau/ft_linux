@@ -31,4 +31,4 @@ if [[ $? != 0 ]]; then
 	nb_error=$((nb_error+1));
 fi
 
-exit $nb_error ;
+return $nb_error ;
