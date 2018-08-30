@@ -41,9 +41,9 @@ time {
 						ninja.sh\
 						meson.sh\
 						procps-ng.sh\
-						e2fsprogs.sh\
+						e2fsprogs.sh
 	do
-		echo -e ${red}"## Call install${BRed} $prog_name ${red} ##"${Rcol}
+		echo -e ${red}"## Call install${BRed} $prog_name ${red}##"${Rcol}
 		cd $ROOT_PWD
 		. $SUB/$prog_name
 		if [[ $? != 0 ]]; then exit $?; fi
