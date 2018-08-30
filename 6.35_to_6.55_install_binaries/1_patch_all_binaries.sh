@@ -7,11 +7,12 @@ blu='\e[0;34m';
 
 nb_error=0
 
-echo -e $red"Patch Bzip2"$Rcol
-cd /sources/bzip2-*/
-patch -Np1 -i ../bzip2-1.0.6-install_docs-1.patch
+echo -e $red"Patch ninja"$Rcol
+cd /sources/ninja-*/
+export NINJAJOBS=4
+patch -Np1 -i ../ninja-1.8.2-add_NINJAJOBS_var-1.patch
 if [[ $? != 0 ]]; then
-	echo -e ${red}"Patch Bzip2 failed"${Rcol}
+	echo -e ${red}"Patch ninja failed"${Rcol}
 	nb_error=$((nb_error+1));
 fi
 

@@ -11,7 +11,7 @@ ROOT_PWD=$(pwd)/
 time {
 	{
 		echo -e ${red}"#########################################################"
-		echo -e "# Start Extract and Install all packages${BRed} 6.35 to 6.77${red} #"
+		echo -e "# Start Extract and Install all packages${BRed} 6.35 to 6.55${red} #"
 		echo -e "#########################################################"${Rcol}
 
 		echo -e $yel"Extract and install START"$Rcol
@@ -34,6 +34,6 @@ time {
 		. ./3_remove_extract_sources.sh
 
 		if [[ $? != 0 ]]; then exit $?; fi
-	}  &> /sources/.635_to_677.log
+	}  &> /sources/.635_to_655.log
 	echo -e ${blu}"All extract and install DONE"${Rcol}
 }

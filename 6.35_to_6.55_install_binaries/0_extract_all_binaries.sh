@@ -33,6 +33,9 @@ for archive in	'gdbm-'\
 				'XML-Parser-'\
 				'libffi-'\
 				'openssl-'\
+				'ninja-'\
+				'meson-'\
+				'e2fsprogs-'
 do
 	uncompress $archive
 done
@@ -44,7 +47,7 @@ OPT="-xvf"
 COMPRESSIONS_EXTENSION=".tar.bz2"
 
 for archive in 	'expat-'\
-				'elfutils-'\
+				'elfutils-'
 do
 	uncompress $archive
 done
@@ -65,6 +68,7 @@ for archive in 	'libtool-'\
 				'kmod-'\
 				'gettext-'\
 				'Python-'\
+				'procps-ng-'
 do
 	uncompress $archive
 done

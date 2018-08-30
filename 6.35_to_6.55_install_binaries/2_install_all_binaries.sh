@@ -38,6 +38,10 @@ time {
 						libffi.sh\
 						openssl.sh\
 						python.sh\
+						ninja.sh\
+						meson.sh\
+						procps-ng.sh\
+						e2fsprogs.sh\
 	do
 		echo -e ${red}"## Call install${BRed} $prog_name ${red} ##"${Rcol}
 		cd $ROOT_PWD
