@@ -24,7 +24,7 @@ if [[ $? != 0 ]]; then
 fi
 
 echo -e $red"Patch sysvinit"$Rcol
-cd /sources/kdb-*/
+cd /sources/sysvinit-*/
 patch -Np1 -i ../sysvinit-2.88dsf-consolidated-1.patch
 if [[ $? != 0 ]]; then
 	echo -e ${red}"Patch sysvinit failed"${Rcol}
