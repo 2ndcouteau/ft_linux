@@ -12,9 +12,10 @@ errors_counter=0
 
 function uncompress()
 {
-	echo -e $blu"Extract $1"$Rcol
+	echo -e ${blu}"Extract $1"${Rcol}
 	tar $OPT $1*$COMPRESSIONS_EXTENSION
 	if [[ $? != 0 ]]; then
+		echo -e ${red}"!! ERROR Extraction !!"${Rcol}
 		errors_counter=$((errors_counter+1));
 	fi
 }
