@@ -34,7 +34,6 @@ for archive in	'bzip2-'\
 				'ncurses-'\
 				'attr-'\
 				'acl-'\
-				'libcap-'\
 				'flex-'\
 				'bash-'
 do
@@ -62,6 +61,7 @@ for archive in 	'sed-'\
 				'shadow-'\
 				'psmisc-'\
 				'bison-'\
+				'libcap-'\
 				'grep-'
 do
 	uncompress $archive
