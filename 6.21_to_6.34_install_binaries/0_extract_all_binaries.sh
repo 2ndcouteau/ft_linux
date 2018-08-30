@@ -35,7 +35,7 @@ for archive in	'bzip2-'\
 				'acl-'\
 				'libcap-'\
 				'flex-'\
-				'bash-'\
+				'bash-'
 do
 	uncompress $archive
 done
@@ -61,7 +61,7 @@ for archive in 	'sed-'\
 				'shadow-'\
 				'psmisc-'\
 				'bison-'\
-				'grep-'\
+				'grep-'
 do
 	uncompress $archive
 done
