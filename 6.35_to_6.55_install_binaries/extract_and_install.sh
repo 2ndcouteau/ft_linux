@@ -5,7 +5,7 @@ gre='\e[0;32m';
 yel='\e[0;33m';
 blu='\e[0;34m';
 
-echo -e $blu"Set$yel ROOT_PWD=$(pwd)"
+echo -e ${blu}"Set${yel} ROOT_PWD=$(pwd)"${Rcol}
 ROOT_PWD=$(pwd)/
 
 time {
