@@ -8,8 +8,12 @@ blu='\e[0;34m';
 cd /sources/kbd-*/
 
 time {
+	echo -e ${red}"Delete useless resizecons"${Rcol}
+	sed -i 's/\(RESIZECONS_PROGS=\)yes/\1no/g' configure
+	sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
+
 	echo -e ${red}"Configure binary"${Rcol}
-	./configure --prefix=/usr
+	PKG_CONFIG_PATH=/tools/lib/pkgconfig ./configure --prefix=/usr --disable-vlock
 
 	echo -e ${red}"make"${Rcol}
 	make
@@ -20,6 +24,10 @@ time {
 
 	echo -e ${red}"make install"${Rcol}
 	make install
+
+	echo -e ${blu}'Install documentation'${Rcol}
+	mkdir -v       /usr/share/doc/kbd-2.0.4
+	cp -R -v docs/doc/* /usr/share/doc/kbd-2.0.4
 
 	echo -e ${blu}'time install kbd.sh'${Rcol}
 }

@@ -21,6 +21,9 @@ time {
 	echo -e ${red}"make install"${Rcol}
 	make install
 
+	echo -e ${red}"MANUAL CHECK"${Rcol}
+	ls -lah /usr/bin/gzip /bin
+
 	echo -e ${red}"Move binary in usefull place"${Rcol}
 	mv -v /usr/bin/gzip /bin
 

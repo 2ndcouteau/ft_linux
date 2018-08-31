@@ -8,10 +8,6 @@ blu='\e[0;34m';
 cd /sources/sysvinit-*/
 
 time {
-
-	echo -e ${red}"Configure binary"${Rcol}
-	./configure --prefix=/usr
-
 	echo -e ${red}"make"${Rcol}
 	make -C src
 

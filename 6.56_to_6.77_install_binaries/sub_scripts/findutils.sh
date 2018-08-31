@@ -24,6 +24,9 @@ time {
 	echo -e ${red}"make install"${Rcol}
 	make install
 
+	echo -e ${red}"MANUAL CHECK"${Rcol}
+	ls -lah /usr/bin/find /bin
+
 	echo -e ${red}"Move binaries to be compliant with FHS"${Rcol}
 	mv -v /usr/bin/find /bin
 	sed -i 's|find:=${BINDIR}|find:=/bin|' /usr/bin/updatedb
