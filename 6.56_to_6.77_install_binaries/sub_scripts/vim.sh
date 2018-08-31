@@ -5,7 +5,7 @@ gre='\e[0;32m';
 yel='\e[0;33m';
 blu='\e[0;34m';
 
-cd /sources/vim-*/
+cd /sources/vim80/
 
 time {
 	echo -e ${red}"Change default place of vimrc"${Rcol}
